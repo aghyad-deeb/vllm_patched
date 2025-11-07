@@ -53,8 +53,7 @@ def has_custom_tools(tool_types: list[str]) -> bool:
 def get_encoding():
     global _harmony_encoding
     if _harmony_encoding is None:
-        _harmony_encoding = load_harmony_encoding(
-            HarmonyEncodingName.HARMONY_GPT_OSS)
+        _harmony_encoding = load_harmony_encoding("HarmonyGptOss")
     return _harmony_encoding
 
 
